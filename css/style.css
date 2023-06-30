@@ -1,0 +1,114 @@
+.bg-image {
+    background-image: url('../images/Landscape-Color.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.bg-image .hello {
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+    top: 100px;
+    right: 150px;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 35px;
+}
+
+/* imag example with obejct fit */
+.image-test {
+    width: 800px;
+    height: 700px;
+    object-fit: cover;
+}
+
+/* responsive styles */
+.wraper {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 100px;
+
+}
+.box {
+    width: 200px;
+    height: 200px;
+}
+/* pseudo classes */
+.box:first-child{
+    background-color: red;
+}
+.box:nth-child(2){
+    background-color: yellow;
+}
+.box:nth-child(3){
+    background-color: blue;
+}
+.box:last-child{
+    background-color: pink;
+}
+
+
+.box-hello {
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    color:blueviolet
+}
+.box:nth-child(3) .box-hello {
+    color: #fff;
+}
+
+/* odd adn even */
+/* .box:nth-child(even) {
+    background-color: red;
+}
+.box:nth-child(odd) {
+    background-color: green;
+} */
+
+/* 1024
+768
+480
+320 */
+
+
+/* responsive media */
+/* 1. ზომების კონტროლი */
+/* @media (max-width:1024px) {
+    .box {
+        width:100px;
+    }
+} */
+
+/* 2.ჩამოვაგდოთ ელემენტები */
+/* @media (max-width: 1024px) {
+    .wraper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        margin-bottom: 30px;
+    }
+} */
+
+/* 3. .ჩამოვაგდოთ ელემენტები*/
+@media (max-width: 1024px) {
+    .wraper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width:480px) {
+    .box {
+        width: 250px;
+    }
+}
